@@ -1,12 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
+/*
+ *
+ */
 int main(int argc, char const *argv[])
 {
     int it = 0, j, num, input;
-
-    scanf("%i", &input);
+    do {
+        scanf("%i", &input);
+    } while (input <= 0)
     int *output = (int *) malloc(sizeof(int) * input);
 
     output[it] = 2;
@@ -27,11 +30,7 @@ int main(int argc, char const *argv[])
             it++;
         }
     }
-<<<<<<< HEAD
     it = it;
-=======
-    it += it;
->>>>>>> 108_Simple_Number
     printf("\n");
 
     free(output);

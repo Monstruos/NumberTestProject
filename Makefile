@@ -1,2 +1,4 @@
+CC = gcc
+
 all: main.c
-	gcc main.c -o main.out
+	$(CC) main.c -o main.out
