@@ -27,6 +27,7 @@ int main(int argc, char const *argv[])
             it++;
         }
     }
+    it = it;
     printf("\n");
 
     free(output);
