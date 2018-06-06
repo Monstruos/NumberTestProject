@@ -27,7 +27,11 @@ int main(int argc, char const *argv[])
             it++;
         }
     }
+<<<<<<< HEAD
     it = it;
+=======
+    it += it;
+>>>>>>> 108_Simple_Number
     printf("\n");
 
     free(output);
