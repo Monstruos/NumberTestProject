@@ -4,4 +4,4 @@ os:
 compiler:
     -gcc
 script:
-    -make
+    make
