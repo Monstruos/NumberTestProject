@@ -6,3 +6,11 @@ compiler:
 script:
     - make all
     - make tests
+deploy:
+    provider: releases
+    api_key:
+        secure: $gittok
+    file: main.out
+    skip_cleanup: true
+    on:
+        tags: true
