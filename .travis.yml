@@ -9,8 +9,8 @@ script:
 deploy:
     provider: releases
         api_key:
-            secure: 95f662f880b0857f8b2985a5b5115a278a8a1811
-        file: *.out
+            secure: $(git-token)
+        file: main.out
         skip_cleanup: true
     on:
         tags: true
