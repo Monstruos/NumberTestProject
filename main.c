@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     int it = 0, j, num, input;
     do {
         scanf("%i", &input);
-    } while (input <= 0)
+    } while (input <= 0);
     int *output = (int *) malloc(sizeof(int) * input);
 
     output[it] = 2;
