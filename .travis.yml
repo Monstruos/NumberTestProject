@@ -9,7 +9,7 @@ script:
 deploy:
     provider: releases
         api_key:
-            secure: $(git-token)
+            secure: $gittok
         file: main.out
         skip_cleanup: true
     on:
